@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Search() {
+
+  // Initialize state for input
+  const [search, setSearch] = useState("")
+
   function handleSubmit(e) {
     e.preventDefault();
     console.log("submitted");
   }
+
+  
 
   return (
     <form className="searchbar" onSubmit={handleSubmit}>
